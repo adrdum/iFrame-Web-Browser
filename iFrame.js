@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-
-<title>iFrame Web Browser</title>
-
-
-<script type="text/javascript">
-
-
 function back()
 {
 	//goes back a page and updates the favicon.ico and iframe
@@ -104,40 +92,3 @@ function updateImg()
 	var rootURL=subURL[2];
 	document.getElementById("webImg").src=rootURL + "/favicon.ico";
 }
-
-</script>
-
-</head>
-<body>
-
-<span>
-<p onclick="alert('iFrame Web Browser v1.4 by Ryan H.')" id="title">iFrame Web Browser</p>
-</span>
-
-<div>
-<button type="button" onclick="back();" id="back">Back</button>
-<button type="button" onclick="forward();" id="forward">Forward</button>
-<button type="button" onclick="refresh();" id="refresh">Refresh</button>
-
-<img src="http://www.bing.com/favicon.ico" alt="Web" id="webImg"></img>
-<input type="url" id="address" value="http://www.bing.com" size="128">
-<button type="button" onclick="go();" id="refresh">Go</button>
-
-<img src="http://www.bing.com/favicon.ico" id="searchImg"></img>
-
-<select id="searchEngineBox" onclick="updateBox();">
-	<option value="Search with Bing" >Bing</option>
-	<option value="Search with Yahoo">Yahoo</option>
-</select>
-
-<input type="search" id="searchBar" placeholder="Search with Bing">
-<button type="button" onclick="search();" id="searchSubmit">Search</button>
-<button type="button" onclick="setSize();" id="setSize">Set Size</button>
-</div>
-
-<iframe src="http://www.bing.com" height = "993" width = "100%" id="iframe" frameborder="0" >
-  <p>Your browser does not support iframes.</p>
-</iframe>
-
-</body>
-</html>
